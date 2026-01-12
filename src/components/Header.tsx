@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,6 +8,7 @@ const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +23,13 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: '#services', label: t('nav.services') },
-    { href: '#about', label: t('nav.about') },
-    { href: '#faq', label: t('nav.faq') },
-    { href: '#contact', label: t('nav.contact') },
+    { to: '/services', label: t('nav.services') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/faq', label: t('nav.faq') },
+    { to: '/contact', label: t('nav.contact') },
   ];
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header
@@ -37,25 +41,29 @@ const Header = () => {
     >
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <span className="font-display text-2xl md:text-3xl font-semibold tracking-wide">
             TULE
           </span>
           <span className="hidden sm:block text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Event Designers
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-xs uppercase tracking-[0.15em] text-foreground/80 hover:text-foreground transition-colors duration-300"
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`text-xs uppercase tracking-[0.15em] transition-colors duration-300 ${
+                isActive(link.to)
+                  ? 'text-foreground font-medium'
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -77,7 +85,7 @@ const Header = () => {
             className="hidden md:flex"
             asChild
           >
-            <a href="#contact">{t('nav.quote')}</a>
+            <Link to="/contact">{t('nav.quote')}</Link>
           </Button>
 
           {/* Mobile Menu Toggle */}
@@ -98,19 +106,23 @@ const Header = () => {
       >
         <nav className="container-wide py-8 flex flex-col gap-6">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <Link
+              key={link.to}
+              to={link.to}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-lg font-display tracking-wide text-foreground/80 hover:text-foreground transition-colors"
+              className={`text-lg font-display tracking-wide transition-colors ${
+                isActive(link.to)
+                  ? 'text-foreground font-medium'
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Button variant="hero" size="lg" className="mt-4" asChild>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
               {t('nav.quote')}
-            </a>
+            </Link>
           </Button>
         </nav>
       </div>
