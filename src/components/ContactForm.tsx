@@ -3,12 +3,10 @@ import { Send, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
 import { z } from 'zod';
 
 const ContactForm = () => {
-  const { t } = useLanguage();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -61,8 +59,8 @@ const ContactForm = () => {
       // Show success state
       setIsSuccess(true);
       toast({
-        title: t('contact.success.title'),
-        description: t('contact.success.desc'),
+        title: '¡Mensaje Enviado!',
+        description: 'Te contactaremos pronto para discutir los detalles de tu evento.',
       });
     } catch {
       toast({
@@ -81,9 +79,9 @@ const ContactForm = () => {
         <div className="container-narrow">
           <div className="text-center py-16 bg-cream dark:bg-secondary/30 rounded-sm">
             <CheckCircle className="w-16 h-16 text-gold mx-auto mb-6" />
-            <h3 className="font-display text-3xl mb-4">{t('contact.success.title')}</h3>
+            <h3 className="font-display text-3xl mb-4">¡Mensaje Enviado!</h3>
             <p className="text-muted-foreground max-w-md mx-auto">
-              {t('contact.success.desc')}
+              Te contactaremos pronto para discutir los detalles de tu evento.
             </p>
             <Button
               variant="heroOutline"
@@ -91,7 +89,7 @@ const ContactForm = () => {
               className="mt-8"
               onClick={() => setIsSuccess(false)}
             >
-              {t('nav.contact')}
+              Enviar otro mensaje
             </Button>
           </div>
         </div>
@@ -105,10 +103,10 @@ const ContactForm = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-4">
-            {t('contact.title')}
+            Contáctanos
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            {t('contact.subtitle')}
+            Cuéntanos sobre tu evento y te ayudaremos a hacerlo realidad
           </p>
         </div>
 
@@ -119,7 +117,7 @@ const ContactForm = () => {
               <Input
                 name="name"
                 type="text"
-                placeholder={t('contact.name')}
+                placeholder="Tu nombre"
                 className={`h-14 border-border/50 focus:border-gold bg-transparent font-body ${errors.name ? 'border-destructive' : ''}`}
               />
               {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
@@ -128,7 +126,7 @@ const ContactForm = () => {
               <Input
                 name="phone"
                 type="tel"
-                placeholder={t('contact.phone')}
+                placeholder="Teléfono"
                 className={`h-14 border-border/50 focus:border-gold bg-transparent font-body ${errors.phone ? 'border-destructive' : ''}`}
               />
               {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
@@ -139,7 +137,7 @@ const ContactForm = () => {
             <Input
               name="email"
               type="email"
-              placeholder={t('contact.email')}
+              placeholder="Correo electrónico"
               className={`h-14 border-border/50 focus:border-gold bg-transparent font-body ${errors.email ? 'border-destructive' : ''}`}
             />
             {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
@@ -148,7 +146,7 @@ const ContactForm = () => {
           <div>
             <Textarea
               name="message"
-              placeholder={t('contact.message')}
+              placeholder="Cuéntanos sobre tu evento..."
               rows={5}
               className={`border-border/50 focus:border-gold bg-transparent resize-none font-body ${errors.message ? 'border-destructive' : ''}`}
             />
@@ -163,10 +161,10 @@ const ContactForm = () => {
             disabled={isSubmitting}
           >
             {isSubmitting ? (
-              t('contact.sending')
+              'Enviando...'
             ) : (
               <>
-                {t('contact.submit')}
+                Enviar Mensaje
                 <Send className="w-4 h-4 ml-2" />
               </>
             )}

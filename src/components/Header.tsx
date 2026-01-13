@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const Header = () => {
-  const { language, setLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -18,15 +16,11 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es');
-  };
-
   const navLinks = [
-    { to: '/services', label: t('nav.services') },
-    { to: '/about', label: t('nav.about') },
-    { to: '/faq', label: t('nav.faq') },
-    { to: '/contact', label: t('nav.contact') },
+    { to: '/services', label: 'Servicios' },
+    { to: '/about', label: 'Nosotros' },
+    { to: '/faq', label: 'FAQ' },
+    { to: '/contact', label: 'Contacto' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -69,15 +63,6 @@ const Header = () => {
 
         {/* Right side actions */}
         <div className="flex items-center gap-4">
-          {/* Language Toggle */}
-          <button
-            onClick={toggleLanguage}
-            className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-foreground/70 hover:text-foreground transition-colors"
-          >
-            <Globe className="w-4 h-4" />
-            <span>{language === 'es' ? 'EN' : 'ES'}</span>
-          </button>
-
           {/* CTA Button - Desktop */}
           <Button
             variant="hero"
@@ -85,7 +70,7 @@ const Header = () => {
             className="hidden md:flex"
             asChild
           >
-            <Link to="/contact">{t('nav.quote')}</Link>
+            <Link to="/contact">Cotizar</Link>
           </Button>
 
           {/* Mobile Menu Toggle */}
@@ -121,7 +106,7 @@ const Header = () => {
           ))}
           <Button variant="hero" size="lg" className="mt-4" asChild>
             <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-              {t('nav.quote')}
+              Cotizar
             </Link>
           </Button>
         </nav>

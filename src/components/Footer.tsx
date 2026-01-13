@@ -1,9 +1,6 @@
 import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
-
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="container-wide py-16">
@@ -19,14 +16,14 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
-              {t('footer.tagline')}
+              Transformamos tus sueños en experiencias inolvidables. Cada detalle cuenta.
             </p>
           </div>
 
           {/* Contact */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.2em] mb-6 text-gold">
-              {t('footer.contact')}
+              Contacto
             </h4>
             <div className="space-y-4">
               <a
@@ -45,7 +42,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                <span>{t('footer.location')}</span>
+                <span>Aguascalientes, México</span>
               </div>
             </div>
           </div>
@@ -53,7 +50,7 @@ const Footer = () => {
           {/* Social */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.2em] mb-6 text-gold">
-              {t('footer.social')}
+              Redes Sociales
             </h4>
             <div className="flex gap-4">
               <a
@@ -79,7 +76,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} TULE Event Designers. {t('footer.rights')}.
+            © {new Date().getFullYear()} TULE Event Designers. Todos los derechos reservados.
           </p>
           <p className="text-xs text-primary-foreground/50">
             Diseñado con ♥ en México
