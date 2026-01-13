@@ -1,4 +1,3 @@
-import { useLanguage } from '@/contexts/LanguageContext';
 import serviceWedding from '@/assets/service-wedding.jpg';
 import serviceQuince from '@/assets/service-quince.jpg';
 import serviceBirthday from '@/assets/service-birthday.jpg';
@@ -7,38 +6,36 @@ import serviceSocial from '@/assets/service-social.jpg';
 import serviceThemed from '@/assets/service-themed.jpg';
 
 const Services = () => {
-  const { t } = useLanguage();
-
   const services = [
     {
       image: serviceWedding,
-      title: t('service1.title'),
-      description: t('service1.desc'),
+      title: 'Bodas',
+      description: 'Diseñamos cada detalle de tu boda para que sea única e inolvidable.',
     },
     {
       image: serviceQuince,
-      title: t('service2.title'),
-      description: t('service2.desc'),
+      title: 'XV Años',
+      description: 'Celebra este momento especial con una fiesta a la altura de tus sueños.',
     },
     {
       image: serviceBirthday,
-      title: t('service3.title'),
-      description: t('service3.desc'),
+      title: 'Cumpleaños',
+      description: 'Fiestas temáticas y elegantes para todas las edades.',
     },
     {
       image: serviceBabyshower,
-      title: t('service4.title'),
-      description: t('service4.desc'),
+      title: 'Baby Showers',
+      description: 'Momentos tiernos y memorables para dar la bienvenida al bebé.',
     },
     {
       image: serviceSocial,
-      title: t('service5.title'),
-      description: t('service5.desc'),
+      title: 'Eventos Sociales',
+      description: 'Aniversarios, graduaciones y celebraciones especiales.',
     },
     {
       image: serviceThemed,
-      title: t('service6.title'),
-      description: t('service6.desc'),
+      title: 'Eventos Temáticos',
+      description: 'Creamos ambientes únicos basados en tu tema favorito.',
     },
   ];
 
@@ -48,10 +45,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-4">
-            {t('services.title')}
+            Nuestros Servicios
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            {t('services.subtitle')}
+            Cada evento es una oportunidad para crear algo extraordinario
           </p>
         </div>
 

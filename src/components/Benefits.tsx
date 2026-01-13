@@ -1,29 +1,26 @@
 import { Sparkles, Users, Award, Heart } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const Benefits = () => {
-  const { t } = useLanguage();
-
   const benefits = [
     {
       icon: Sparkles,
-      title: t('benefit1.title'),
-      description: t('benefit1.desc'),
+      title: 'Diseño Único',
+      description: 'Cada evento es una obra de arte personalizada según tu visión y estilo.',
     },
     {
       icon: Users,
-      title: t('benefit2.title'),
-      description: t('benefit2.desc'),
+      title: 'Experiencia',
+      description: 'Más de 10 años creando eventos memorables en Aguascalientes.',
     },
     {
       icon: Award,
-      title: t('benefit3.title'),
-      description: t('benefit3.desc'),
+      title: 'Calidad Premium',
+      description: 'Trabajamos con los mejores proveedores para garantizar excelencia.',
     },
     {
       icon: Heart,
-      title: t('benefit4.title'),
-      description: t('benefit4.desc'),
+      title: 'Dedicación Total',
+      description: 'Tu evento es nuestra prioridad, cuidamos cada detalle con pasión.',
     },
   ];
 
@@ -33,10 +30,10 @@ const Benefits = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-4">
-            {t('benefits.title')}
+            ¿Por Qué Elegirnos?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            {t('benefits.subtitle')}
+            Nos dedicamos a transformar tus sueños en realidad
           </p>
         </div>
 
