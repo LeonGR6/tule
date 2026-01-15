@@ -31,8 +31,8 @@ const ContactForm = () => {
     message: z.string().trim().min(1, 'El mensaje es requerido').max(1000, 'El mensaje es muy largo'),
   });
 
-  const WHATSAPP_NUMBER = '524491234567'; // Número de WhatsApp (cambiar por el real)
-  const INSTAGRAM_USER = 'tule.eventdesigners'; // Usuario de Instagram (cambiar por el real)
+  const WHATSAPP_NUMBER = '5214494673626';
+  const INSTAGRAM_USER = 'tule.eventdesigners';
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
