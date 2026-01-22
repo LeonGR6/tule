@@ -1,25 +1,10 @@
-# Welcome to the Tulé.Event.Designers project
+# Welcome to the Tulé.Event.Designers
 
 ## Project info
-
-## How can I edit this code?
-
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm install
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 
 ## What technologies are used for this project?
 
 This project is built with:
-
 - Vite
 - TypeScript
 - React
@@ -27,7 +12,6 @@ This project is built with:
 - Tailwind CSS
 
 # Features:
-
 Contact form with options to send via email, WhatsApp, or Instagram
 Mission, vision, and values ​​sections
 Responsive design for mobile and desktop
