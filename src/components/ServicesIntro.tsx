@@ -10,12 +10,12 @@ const ServicesIntro = () => {
     {
       icon: Clock,
       title: 'Coordinación Integral',
-      description: 'Gestionamos cada aspecto de tu evento de principio a fin.',
+      description: 'Gestionamos cada parte de tu evento de principio a fin.',
     },
     {
       icon: Star,
       title: 'Atención al Detalle',
-      description: 'Cada elemento es cuidadosamente seleccionado para la perfección.',
+      description: 'Cuidamos cada detalle como si fuera nuestro.',
     },
   ];
 
@@ -28,16 +28,19 @@ const ServicesIntro = () => {
             <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-gold mb-4">
               Nuestro Enfoque
             </p>
+            
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Experiencias Diseñadas con Pasión
+              Eventos creados con pasión.
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              En Tule Event Designers, entendemos que cada celebración es única. Por eso, 
-              nos dedicamos a escuchar tus ideas y transformarlas en eventos extraordinarios 
+
+            <p className="text-muted-foreground leading-relaxed mb-8 text-justify">
+              En Tulé, entendemos que cada celebración es única. Por eso, 
+              nos dedicamos a escuchar tus ideas y transformarlas en eventos unicos 
               que superan todas las expectativas.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Desde la conceptualización hasta el último detalle de la decoración, 
+
+            <p className="text-muted-foreground leading-relaxed text-justify">
+              Desde la conceptualización hasta el último detalle, 
               nuestro equipo de expertos trabaja contigo para asegurar que tu evento 
               sea exactamente como lo imaginaste.
             </p>

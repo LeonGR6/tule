@@ -17,8 +17,8 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { to: '/services', label: 'Servicios' },
     { to: '/about', label: 'Nosotros' },
+    { to: '/services', label: 'Servicios' },
     { to: '/faq', label: 'FAQ' },
     { to: '/contact', label: 'Contacto' },
   ];
@@ -37,7 +37,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <span className="font-display text-2xl md:text-3xl font-semibold tracking-wide">
-            TULE
+            TULÉ
           </span>
           <span className="hidden sm:block text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Event Designers

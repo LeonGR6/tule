@@ -24,13 +24,15 @@ const Hero = () => {
 
         {/* Main Title */}
         <h1 className="animate-fade-up opacity-0 stagger-2 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 text-balance">
-          Creamos Momentos que Perduran
+          "Los eventos son efimeros, las emociones perduran"
         </h1>
 
         {/* Description */}
-        <p className="animate-fade-up opacity-0 stagger-3 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-          Transformamos tus ideas en experiencias extraordinarias. Diseño, coordinación y producción de eventos únicos en Aguascalientes.
-        </p>
+        <div className="flex justify-center max-w-2xl mx-auto mb-12">
+    <p className="animate-fade-up opacity-0 stagger-3 text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-nowrap">
+    Transformamos tus sueños en experiencias inolvidables. Cada detalle cuenta.
+    </p>
+        </div>
 
         {/* CTAs */}
         <div className="animate-fade-up opacity-0 stagger-4 flex flex-col sm:flex-row gap-4 justify-center">

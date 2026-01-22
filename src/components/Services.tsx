@@ -4,6 +4,9 @@ import serviceBirthday from '@/assets/service-birthday.jpg';
 import serviceBabyshower from '@/assets/service-babyshower.jpg';
 import serviceSocial from '@/assets/service-social.jpg';
 import serviceThemed from '@/assets/service-themed.jpg';
+import serviceCorporate from '@/assets/service-corporate.jpg';
+import serviceGenderReveal from '@/assets/service-genderreveal.jpg';
+import serviceBautizo from '@/assets/service-bautizo.jpg';
 
 const Services = () => {
   const services = [
@@ -36,6 +39,21 @@ const Services = () => {
       image: serviceThemed,
       title: 'Eventos Temáticos',
       description: 'Creamos ambientes únicos basados en tu tema favorito.',
+    },
+    {
+      image: serviceCorporate,
+      title: 'Eventos Corporativos',
+      description: 'Cenas empresariales, lanzamientos y eventos profesionales.',
+    },
+    {
+      image: serviceGenderReveal,
+      title: 'Tipi Estilo picnic',
+      description: 'Celebra una tarde tranquila con la mejor compañia.',
+    },
+    {
+      image: serviceBautizo,
+      title: 'Bautizos y Comuniones',
+      description: 'Momentos religiosos celebrados con elegancia y amor.',
     },
   ];
 
