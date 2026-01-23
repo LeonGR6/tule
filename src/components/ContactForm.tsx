@@ -222,7 +222,7 @@ const ContactForm = () => {
               Elige cómo enviar tu mensaje:
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Button
                 type="button"
                 variant="hero"
@@ -250,17 +250,6 @@ const ContactForm = () => {
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp
-              </Button>
-              
-              <Button
-                type="button"
-                variant="heroOutline"
-                size="lg"
-                className="w-full text-pink-600 border-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white hover:border-transparent dark:text-pink-500 dark:border-pink-500"
-                onClick={handleInstagramSubmit}
-              >
-                <InstagramIcon />
-                <span className="ml-2">Instagram</span>
               </Button>
             </div>
           </div>
