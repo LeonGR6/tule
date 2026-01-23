@@ -47,7 +47,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="/about" className="text-foreground/50 hover:text-foreground transition-colors">
+        <a className="text-foreground/50 hover:text-foreground transition-colors">
           <ArrowDown className="w-6 h-6" />
         </a>
       </div>
