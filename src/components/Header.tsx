@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import tule from '@/assets/tule.png';
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,11 +39,9 @@ const Header = () => {
         
         <Link to="/" className="flex items-center gap-3">
 
-        <img src="/favicon.ico" alt="TULÉ - Event Designers" className="h-7 w-7 md:h-8 md:w-8 mr-2"/>
+        <img src={tule} alt="TULÉ - Event Designers" className="h-10 w-auto md:h-12 mr-3"/>
 
-          <span className="font-display text-2xl md:text-3xl font-semibold tracking-wide">
-            TULÉ
-          </span>
+          
           <span className="hidden sm:block text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Event Designers
           </span>

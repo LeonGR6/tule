@@ -6,7 +6,7 @@ const AboutSection = () => {
       icon: Target,
       title: 'Misión',
       description:
-        'Servicios personalizados, de calidad. Brindar tranquilidad y confianza en cada etapa del proceso.',
+        'Servicios personalizados y de calidad. Brindar tranquilidad y confianza en cada etapa del proceso.',
     },
     {
       icon: Eye,
@@ -39,7 +39,7 @@ const AboutSection = () => {
             que trabajan con pasión en los detalles.
 
           </p>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground text-lg leading-relaxed mb-6">
            Cada proyecto es una oportunidad para superar nuestras
            expectativas, transformar ideas en experiencias memorables
            y recuerdos que se quedan para siempre.

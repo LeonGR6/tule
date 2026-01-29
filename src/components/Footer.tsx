@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import tule from '@/assets/tuleb.png';
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg 
@@ -19,11 +20,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <span className="font-display text-3xl font-semibold tracking-wide">
-                TULÉ
-              </span>
+              <img src={tule} alt="TULÉ - Event Designers" className="h-10 w-auto md:h-12 mr-3"/>
+
               <span className="block text-xs uppercase tracking-[0.2em] text-primary-foreground/60 mt-1">
-                Event Designers
+                
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">

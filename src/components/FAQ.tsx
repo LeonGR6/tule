@@ -9,7 +9,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: '¿Con cuánta anticipación debo reservar?',
-      answer: 'Recomendamos reservar con al menos 3-6 meses de anticipación para eventos grandes. Para eventos más pequeños, 1-2 meses son suficientes.',
+      answer: 'Recomendamos reservar con al menos 3-6 meses de anticipación para eventos grandes. Para eventos pequeños, 1-2 meses son suficientes.',
     },
     {
       question: '¿Qué incluye el servicio de diseño de eventos?',

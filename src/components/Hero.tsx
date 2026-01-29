@@ -30,7 +30,7 @@ const Hero = () => {
         {/* Description */}
         <div className="flex justify-center max-w-2xl mx-auto mb-12">
     <p className="animate-fade-up opacity-0 stagger-3 text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-nowrap">
-    Transformamos tus sueños en experiencias inolvidables. Cada detalle cuenta.
+    Transformamos tus sueños en experiencias inolvidables.
     </p>
         </div>
 

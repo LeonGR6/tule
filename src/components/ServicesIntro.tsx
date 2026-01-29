@@ -14,7 +14,7 @@ const ServicesIntro = () => {
     },
     {
       icon: Star,
-      title: 'Atención al Detalle',
+      title: 'Atención al Cliente',
       description: 'Cuidamos cada detalle como si fuera nuestro.',
     },
   ];
