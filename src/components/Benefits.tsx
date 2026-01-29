@@ -5,7 +5,7 @@ const Benefits = () => {
     {
       icon: Sparkles,
       title: 'Diseño Único',
-      description: 'Cada evento es una obra de arte personalizada según tu visión y estilo.',
+      description: 'Cada evento es una obra de arte personalizada.',
     },
     {
       icon: Users,
@@ -20,7 +20,7 @@ const Benefits = () => {
     {
       icon: Heart,
       title: 'Dedicación Total',
-      description: 'Tu evento es nuestra prioridad, cuidamos cada detalle con pasión.',
+      description: 'Tu evento es nuestra prioridad, cuidamos cada detalle.',
     },
   ];
 
@@ -32,9 +32,6 @@ const Benefits = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-4">
             ¿Por Qué Elegirnos?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Nos dedicamos a transformar tus sueños en realidad
-          </p>
         </div>
 
         {/* Benefits Grid */}

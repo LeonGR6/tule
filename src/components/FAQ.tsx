@@ -9,15 +9,15 @@ const FAQ = () => {
   const faqs = [
     {
       question: '¿Con cuánta anticipación debo reservar?',
-      answer: 'Recomendamos reservar con al menos 3-6 meses de anticipación para eventos grandes como bodas y XV años. Para eventos más pequeños, 1-2 meses suelen ser suficientes.',
+      answer: 'Recomendamos reservar con al menos 3-6 meses de anticipación para eventos grandes. Para eventos más pequeños, 1-2 meses son suficientes.',
     },
     {
       question: '¿Qué incluye el servicio de diseño de eventos?',
-      answer: 'Incluye consulta inicial, diseño conceptual, coordinación de proveedores, montaje y desmontaje, supervisión el día del evento y todo lo necesario para que tu celebración sea perfecta.',
+      answer: 'Consulta inicial, diseño conceptual, coordinación de proveedores, montaje y desmontaje, supervisión el día del evento y todo lo necesario para que tu celebración sea perfecta.',
     },
     {
       question: '¿Trabajan solo en Aguascalientes?',
-      answer: 'Principalmente trabajamos en Aguascalientes y zonas cercanas, pero también realizamos eventos en otros estados. Contáctanos para más información.',
+      answer: 'Principalmente trabajamos en Aguascalientes y zonas cercanas, pero también realizamos eventos en otros estados.',
     },
     {
       question: '¿Ofrecen paquetes personalizados?',

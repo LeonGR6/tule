@@ -17,7 +17,7 @@ const Services = () => {
     },
     {
       image: serviceQuince,
-      title: 'XV Años',
+      title: 'Bautizos',
       description: 'Celebra este momento especial con una fiesta a la altura de tus sueños.',
     },
     {
@@ -27,8 +27,8 @@ const Services = () => {
     },
     {
       image: serviceBabyshower,
-      title: 'Baby Showers',
-      description: 'Momentos tiernos y memorables para dar la bienvenida al bebé.',
+      title: 'Table Styling',
+      description: 'Arte de diseñar y montar un proceso creativo que forma parte de la decoración.',
     },
     {
       image: serviceSocial,
@@ -37,23 +37,23 @@ const Services = () => {
     },
     {
       image: serviceThemed,
-      title: 'Eventos Temáticos',
+      title: 'Coctelería',
       description: 'Creamos ambientes únicos basados en tu tema favorito.',
     },
     {
       image: serviceCorporate,
-      title: 'Eventos Corporativos',
+      title: 'Cordinación de Eventos',
       description: 'Cenas empresariales, lanzamientos y eventos profesionales.',
     },
     {
       image: serviceGenderReveal,
-      title: 'Tipi Estilo picnic',
+      title: 'Teepe & Picnic',
       description: 'Celebra una tarde tranquila con la mejor compañia.',
     },
     {
       image: serviceBautizo,
-      title: 'Bautizos y Comuniones',
-      description: 'Momentos religiosos celebrados con elegancia y amor.',
+      title: 'Catering',
+      description: 'Servicio profesional de suministro de alimentos y bebidas.',
     },
   ];
 

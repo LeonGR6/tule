@@ -4,21 +4,21 @@ const AboutSection = () => {
   const values = [
     {
       icon: Target,
-      title: 'Nuestra Misión',
+      title: 'Misión',
       description:
-        'Crear eventos únicos e inolvidables que superen las expectativas de nuestros clientes, cuidando cada detalle con profesionalismo y dedicación.',
+        'Servicios personalizados, de calidad. Brindar tranquilidad y confianza en cada etapa del proceso.',
     },
     {
       icon: Eye,
-      title: 'Nuestra Visión',
+      title: 'Visión',
       description:
-        'Ser la empresa líder en diseño de eventos en Aguascalientes, reconocida por nuestra creatividad, excelencia y compromiso con la satisfacción del cliente.',
+        'Consolidarnos como una marca que transforma, crea y convierte cada celebración en momentos únicos.',
     },
     {
       icon: Heart,
-      title: 'Nuestros Valores',
+      title: 'Valores',
       description:
-        'Pasión por lo que hacemos, honestidad en cada paso, creatividad sin límites y compromiso total con la felicidad de nuestros clientes.',
+        'Pasión por lo que hacemos, honestidad, creatividad sin límites y compromiso total con nuestros clientes.',
     },
   ];
 
@@ -31,17 +31,18 @@ const AboutSection = () => {
             Quiénes Somos
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-            Tule Event Designers
+            Tulé Event Designers
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Somos un equipo apasionado de diseñadores y coordinadores de eventos 
-            con más de una década de experiencia creando celebraciones memorables 
-            en Aguascalientes y sus alrededores.
+            Somos una empresa especializada en la organización de eventos.
+            Nuestro equipo está conformado por personas capacitadas, comprometidas,
+            que trabajan con pasión en los detalles.
+
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Nuestro nombre "Tule" representa la elegancia natural y la tradición mexicana, 
-            valores que infundimos en cada proyecto. Creemos que cada evento merece ser 
-            una obra de arte personalizada, un reflejo auténtico de quienes lo celebran.
+           Cada proyecto es una oportunidad para superar nuestras
+           expectativas, transformar ideas en experiencias memorables
+           y recuerdos que se quedan para siempre.
           </p>
         </div>
 

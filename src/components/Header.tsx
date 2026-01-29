@@ -34,8 +34,11 @@ const Header = () => {
       }`}
     >
       <div className="container-wide flex items-center justify-between">
-        {/* Logo */}
+        
         <Link to="/" className="flex items-center gap-3">
+        
+        <img src="public/favicon.ico" alt="TULÉ - Event Designers" className="h-7 w-7 md:h-8 md:w-8 mr-2"/>
+
           <span className="font-display text-2xl md:text-3xl font-semibold tracking-wide">
             TULÉ
           </span>
