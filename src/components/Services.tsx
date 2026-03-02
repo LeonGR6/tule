@@ -42,7 +42,7 @@ const Services = () => {
     },
     {
       image: serviceCorporate,
-      title: 'Cordinación de Eventos',
+      title: 'Coordinación de Eventos',
       description: 'Cenas empresariales, lanzamientos y eventos profesionales.',
     },
     {
